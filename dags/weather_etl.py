@@ -6,7 +6,7 @@ from datetime import datetime
 from airflow.providers.postgres.hooks.postgres import PostgresHook
 
 
-API_KEY = "6f62b378b4e81a475fb67c24e5e2367c"
+API_KEY = " YOUR API KEY"
 CITY = "Caratinga,BR"
 ENDPOINT = f"http://api.openweathermap.org/data/2.5/weather?q={CITY}&appid={API_KEY}&units=metric"
 

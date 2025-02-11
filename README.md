@@ -68,6 +68,11 @@ You can also trigger it manually from the Airflow web interface.
 ### 🔍 Querying the Data
 
 Connect to the PostgreSQL database and run queries to explore the collected data:
-```sql
-SELECT * FROM weather_data;
+   ```sql
+   SELECT * FROM weather_data;
+   ```
+
+---
+
+![airflow](https://github.com/user-attachments/assets/6b150eae-c961-47e5-a4b9-3d49988fe1b1)
 

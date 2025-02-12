@@ -67,12 +67,39 @@ You can also trigger it manually from the Airflow web interface.
 
 ### 🔍 Querying the Data
 
-Connect to the PostgreSQL database and run queries to explore the collected data:
+You can explore the data stored in PostgreSQL by connecting to the database. Here are two ways to do that:
+
+1. **Using the terminal:**
+
+   ```bash
+   docker exec -it weather-data-pipeline-postgres-1 psql -U airflow -d airflow
+   ´´´
+   Once connected, run the following SQL query:
+
    ```sql
    SELECT * FROM weather_data;
    ```
 
+2. **Using a tool like DataGrip or DBeaver:**
+
+Connect to the PostgreSQL instance with the following details:
+
+- **Host:** `localhost`
+- **Port:** `5432`
+- **Database:** `airflow`
+- **Username:** `airflow`
+- **Password:** `airflow`
+
 ---
+
+### Example of the collected data:
+
+| city      | temperature | humidity | Weather          | timestamp                  |
+|-----------|-------------|----------|------------------|----------------------------|
+| Caratinga | 26.82       | 60       | overcast clouds  | 2025-02-11 13:00:30.139280 |
+| London    | 5.54        | 81       | overcast clouds  | 2025-02-12 14:59:41.921171 |
+
+
 
 ![airflow](https://github.com/user-attachments/assets/6b150eae-c961-47e5-a4b9-3d49988fe1b1)
 

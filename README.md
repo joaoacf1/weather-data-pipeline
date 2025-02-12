@@ -4,6 +4,8 @@ This project is a data pipeline built with **Apache Airflow**, **Docker**, and *
 It collects weather data daily from a public weather API and stores it in a PostgreSQL database for further analysis.  
 This project showcases my skills in building **scalable ETL pipelines** using modern data engineering tools.
 
+![Image](https://github.com/user-attachments/assets/9e91addf-9a62-44d4-9513-5a0ea5cb5bfe)
+
 ---
 
 ## 🚀 Tech Stack
